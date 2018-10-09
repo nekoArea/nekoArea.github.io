@@ -1,0 +1,139 @@
+/*
+
+imagecolor:
+rgb(255,0,160)
+#ff00a0
+
+*/
+
+/*画面全体のフチを無くす*/
+body{
+  margin: 0;
+  padding: 0;
+  background-image: url("bg.jpg");
+  background-attachment: fixed; /*背景付いてこない*/
+}
+
+/*グローバルナビ*/
+ul.above {
+  background-color: rgba(0,0,0,0);
+  display: flex;
+  margin: 0;
+  padding: 0;
+  position:fixed; /*固定しないと重ならない問題*/
+  z-index:100;
+}
+
+ul.above li{
+  /*ここがないと箇条書きの点が出る*/
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  width: 100px;
+/*  width: 100%;  */
+/*ボタンの横幅揃える*/
+  margin:0 auto;   /*リンクの間隔を均等にする*/
+}
+
+ul.above a{
+  display:block;   /*テキスト部分以外もクリックできる*/
+  line-height:77px;
+  height:77px;
+  text-align:center;
+  background-color: rgba(0,0,0,0); /*ヘッダー背景を透過*/
+  color: rgb(255,255,255);  /*リンクの色*/
+  text-decoration: none;  /*文字の下線を消す*/
+}
+
+/*ホバーでナビ(文字部)の色が変わる*/
+ul.above a:hover{
+  color: rgb(0,0,0);
+  text-decoration: underline overline;
+}
+
+/*ヘッダーの背景と位置*/
+header{
+  background-color: #ff00a0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/*トップページの段組み*/
+section.topNews{
+  background-color: rgba(255,255,255,0.8);
+  width: 80%;
+  text-align: center;
+  margin: auto;
+}
+
+/*画像のセンタリング*/
+img{
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+footer{
+  font-size: 14px;
+  line-height: 1.429;
+  color: rgb(255,255,255);
+  background-color: rgb(0,0,0);
+  clear: both;  /*段組みに紛れて回り込まない*/
+  text-align: center;
+}
+
+/*見出し*/
+h1{
+  font-size: 25px;
+  background-color: rgb(0,0,0);
+  color: #ffffff;
+  margin: auto;
+  clear: both;
+}
+
+h2{
+  font-size: 20px;
+  color: #ff00a0;
+  margin: 10px;
+}
+
+p{
+  font-size: 17px;
+  color: #5b5b5b; /*文字色*/
+  margin: 20px;
+  text-align: center;
+}
+
+/*テーブルのセンタリング*/
+table{
+  margin: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*ボックス要素*/
+.box {
+    padding: 0.2em 0.5em;
+    margin: 2em 0;
+    background: #ffffff;
+    box-shadow: 0px 0px 0px 10px #ffffff;
+    border: solid 2px #ff00a0;
+    border-radius: 8px;
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.box p {
+    margin: 20px;
+}
+
+/*リンクをピンクに*/
+a {
+  color: #ff00a0;
+}
+
+/*タイトルを白に*/
+.title{
+  color: #ffffff;
+}
